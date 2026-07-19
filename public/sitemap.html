@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap | Gracespring Hospitals</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --primary-light: #e6f0fa;
+            --text-dark: #2c3e50;
+            --text-muted: #6c757d;
+            --bg-light: #f8f9fa;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        /* Sitemap Grid Structure */
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .sitemap-section {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .sitemap-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .sitemap-section h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        /* Link Lists */
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sitemap-list li {
+            margin-bottom: 10px;
+        }
+
+        .sitemap-list a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-block;
+            transition: color 0.2s ease;
+        }
+
+        .sitemap-list a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        /* Nested lists for sub-services */
+        .nested-list {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 8px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .nested-list li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .nested-list a {
+            color: var(--text-muted);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .sitemap-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Sitemap</h1>
+            <p class="subtitle">A complete directory of pages across the Gracespring Hospitals web platform.</p>
+        </header>
+
+        <main class="sitemap-grid">
+            
+            <!-- Core Pages -->
+            <section class="sitemap-section">
+                <h2>General</h2>
+                <ul class="sitemap-list">
+                    <li><a href="/">Home Page</a></li>
+                    <li><a href="/who-we-are/about-us">About Us</a></li>
+                    <li><a href="/who-we-are/meet-the-team">Meet the Team</a></li>
+                    <li><a href="/news-and-media">News & Media</a></li>
+                    <li><a href="/testimonials">Patient Testimonials</a></li>
+                </ul>
+            </section>
+
+            <!-- Surgical Services -->
+            <section class="sitemap-section">
+                <h2>Surgical Services</h2>
+                <ul class="sitemap-list">
+                    <li><a href="/services/surgical-services">Surgical Overview</a></li>
+                    <li>
+                        <ul class="nested-list">
+                            <li><a href="/services/surgical-services/cardiothoracic-and-vascular-surgery">Cardiothoracic & Vascular</a></li>
+                            <li><a href="/services/surgical-services/urology-surgery">Urology Surgery</a></li>
+                            <li><a href="/services/surgical-services/general-surgery">General Surgery</a></li>
+                            <li><a href="/services/surgical-services/paediatric-surgery">Paediatric Surgery</a></li>
+                            <li><a href="/services/surgical-services/neurosurgery">Neurosurgery</a></li>
+                            <li><a href="/services/surgical-services/orthopaedics-surgery">Orthopaedics Surgery</a></li>
+                            <li><a href="/services/surgical-services/plastic-surgery">Plastic Surgery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Internal Medicine -->
+            <section class="sitemap-section">
+                <h2>Internal Medicine</h2>
+                <ul class="sitemap-list">
+                    <li><a href="/services/internal-medicine">Medicine Overview</a></li>
+                    <li>
+                        <ul class="nested-list">
+                            <li><a href="/services/internal-medicine/cardiology-specialist-care">Cardiology</a></li>
+                            <li><a href="/services/internal-medicine/pulmonology-specialist-care">Pulmonology</a></li>
+                            <li><a href="/services/internal-medicine/gastroenterology-specialist-care">Gastroenterology</a></li>
+                            <li><a href="/services/internal-medicine/nephrology-specialist-care">Nephrology</a></li>
+                            <li><a href="/services/internal-medicine/endocrinology-specialist-care">Endocrinology</a></li>
+                            <li><a href="/services/internal-medicine/rheumatology-specialist-care">Rheumatology</a></li>
+                            <li><a href="/services/internal-medicine/neurology-specialist-care">Neurology</a></li>
+                            <li><a href="/services/internal-medicine/oncology-specialist-care">Oncology</a></li>
+                            <li><a href="/services/internal-medicine/haematology-specialist-care">Haematology</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Women & Child Health -->
+            <section class="sitemap-section">
+                <h2>Women & Child Health</h2>
+                <ul class="sitemap-list">
+                    <li><a href="/services/women-and-child-health">Health Hub Overview</a></li>
+                    <li>
+                        <ul class="nested-list">
+                            <li><a href="/services/women-and-child-health/obstetrics-and-gynaecological-services">Obstetrics & Gynaecology</a></li>
+                            <li><a href="/services/women-and-child-health/fertility-treatment">Fertility Treatment</a></li>
+                            <li><a href="/services/women-and-child-health/general-paediatrics">General Paediatrics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Specialty Units -->
+            <section class="sitemap-section">
+                <h2>Specialty Units</h2>
+                <ul class="sitemap-list">
+                    <li><a href="/services/specialty-units">Specialty Overview</a></li>
+                    <li>
+                        <ul class="nested-list">
+                            <li><a href="/services/specialty-units/ICU-and-emergency-medicine">ICU & Emergency</a></li>
+                            <li><a href="/services/specialty-units/dialysis">Dialysis Unit</a></li>
+                            <li><a href="/services/specialty-units/chemotherapy">Chemotherapy</a></li>
+                            <li><a href="/services/specialty-units/diagnostic-services">Diagnostic Services</a></li>
+                            <li><a href="/services/specialty-units/dental-care">Dental Care</a></li>
+                            <li><a href="/services/specialty-units/ophthalmology-care">Ophthalmology</a></li>
+                            <li><a href="/services/specialty-units/physiotherapy">Physiotherapy</a></li>
+                            <li><a href="/services/specialty-units/wellness">Wellness & Checkups</a></li>
+                            <li><a href="/services/specialty-units/online-consultations">Online Consultations</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Patient Support & Legal -->
+            <section class="sitemap-section">
+                <h2>Support & Legal</h2>
+                <ul class="sitemap-list">
+                    <li><a href="/patient-support/contact-us">Contact Us</a></li>
+                    <li><a href="/patient-support/feedback">Patient Feedback</a></li>
+                    <li><a href="/patient-support/faq">Frequently Asked Questions</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-use">Terms of Use</a></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Gracespring Hospitals. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
