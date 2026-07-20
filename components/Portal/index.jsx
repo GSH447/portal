@@ -130,7 +130,9 @@ export default function PatientPortal() {
               onChange={(e) => setHospital(e.target.value)}
               className="w-full border border-gray-300 text-gray-600 text-sm p-3 appearance-none outline-none focus:border-[#4A90E2]"
             >
-              <option value="Gracespring Hospitals Limited">Gracespring Hospitals Patient Portal</option>
+              <option value="Gracespring Hospitals Limited">Patient Portal</option>
+              <option value="Gracespring Hospitals Limited">Appointment Portal</option>
+              <option value="Gracespring Hospitals Limited">Telemedicine</option>
             </select>
             <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
           </div>
@@ -169,13 +171,22 @@ export default function PatientPortal() {
 
           {/* LOGIN / RESET BUTTONS */}
           <div className="flex gap-4 pt-2">
-            <button
+
+            {/* <Link
+              href="/patient-dashboard"
+              disabled={isLoading}
+              className="flex-1 flex justify-center items-center bg-[#4A90E2] hover:bg-[#357ABD] text-white text-sm font-medium py-2.5 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+            >
+              {isLoading ? <Loader2 className="animate-spin" size={18} /> : 'Login'}
+            </Link> */}
+
+             <button
               type="submit"
               disabled={isLoading}
               className="flex-1 flex justify-center items-center bg-[#4A90E2] hover:bg-[#357ABD] text-white text-sm font-medium py-2.5 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {isLoading ? <Loader2 className="animate-spin" size={18} /> : 'Login'}
-            </button>
+            </button> 
             <button
               type="button"
               onClick={handleReset}
