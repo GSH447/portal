@@ -2,3 +2,6 @@
 
 export const API_BASE_URL_HIS = 'https://test-10.gracespringhospitals.com';
 
+
+// export const API_BASE_URL_HIS = 'https://api-his.gracespringhospitals.com';
+
