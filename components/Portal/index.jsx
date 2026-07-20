@@ -42,6 +42,7 @@ export default function PatientPortal() {
       // TODO: Replace '/auth/patient/login' with your actual HIS endpoint
       const response = await fetch(`${API_BASE_URL_HIS}/auth/patient/login`, {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
