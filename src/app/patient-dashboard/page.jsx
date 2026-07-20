@@ -18,10 +18,10 @@ import {
 } from "lucide-react";
 
 const ALL_MODULES = [
-  { id: "Appointment", label: "Appointment", path: "/patients/search", icon: Users, color: "blue", description: "Book & search Appointment" },
-  { id: "lab", label: "Laboratory", path: "/lab/worklist", icon: FlaskConical, color: "purple", description: "Lab test & results" },
-  { id: "pharmacy", label: "Pharmacy", path: "/pharmacy/queue", icon: Pill, color: "emerald", description: "prescriptions" },
-  { id: "billing", label: "Billing", path: "/billing/opd", icon: CreditCard, color: "indigo", description: "Invoices & payments" },
+  { id: "Appointment", label: "Appointment", path: "/appointment", icon: Users, color: "blue", description: "Book & search Appointment" },
+  { id: "lab", label: "Laboratory", path: "/lab", icon: FlaskConical, color: "purple", description: "Lab test & results" },
+  { id: "pharmacy", label: "Pharmacy", path: "/pharmacy", icon: Pill, color: "emerald", description: "prescriptions" },
+  { id: "billing", label: "Billing", path: "/billing", icon: CreditCard, color: "indigo", description: "Invoices & payments" },
 ];
 
 const colorMap = {
