@@ -180,7 +180,7 @@ const Lab = () => {
         )}
       >
         <div className="flex-shrink-0">
-          <Link href="/">
+          <Link href="#">
             <Image
               src="/assets/logo/siteLogo-nobg.png"
               width={180}

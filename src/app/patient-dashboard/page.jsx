@@ -149,7 +149,7 @@ const Dashboard = () => {
       <header
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-300 flex items-center justify-between py-2 min-h-16 h-auto",
-          pathname === "/"
+          pathname === "#"
             ? isScrolled
               ? "bg-[#2A157c] shadow-md px-4 sm:px-6 xl:px-12 2xl:px-16"
               : "bg-transparent px-4 sm:px-6 xl:px-12 2xl:px-16"
@@ -157,7 +157,7 @@ const Dashboard = () => {
         )}
       >
         <div className="flex-shrink-0 z-50">
-          <Link href="/">
+          <Link href="#">
             <Image
               src="/assets/logo/siteLogo-nobg.png"
               width={180}

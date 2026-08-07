@@ -93,7 +93,7 @@ export default function PatientPortal() {
              
                 
                 <div className="bg-[#2A157c]  flex-shrink-0 z-50">
-                  <Link href="/">
+                  <Link href="https://gracespringhospitals.com/">
                     <Image
                       src="/assets/logo/siteLogo-nobg.png"
                       width={180}
